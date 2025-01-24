@@ -4,21 +4,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
+}
+.container {
   position: relative;
 }
 img {
   width: 200px;
   position: absolute;
   /* top: 0; */
-  bottom: 40%;
+  bottom: 39%;
 
-  right: 35%;
+  left: 50%;
   /* left:; */
   transform: translate(-50%, -50%);
-
-  /* background-color: #0400ff; */
 }
 .calculator {
   width: 320px;
@@ -31,12 +30,20 @@ img {
 .calculator-header {
   background: #e5b5f1d7;
   border-radius: 20px;
-  padding: 20px;
+  padding: 15px;
   height: 80px;
+  font-size: 21.6px;
   display: flex;
   position: relative;
   overflow: hidden;
+  border: none;
+  font-weight: bold;
+
 }
+/* input{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+} */
 .calculator-buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

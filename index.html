@@ -4,38 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-
+    <title>Calculator</title>
   </head>
   <body>
     <div class="container">
       <div class="calculator">
-        <div class="calculator-header">
-          <div class="calculator-content"></div>
-        </div>
+        <input class="calculator-header" id="display" />
+
         <img src="image copy 3.png" alt="" />
 
         <div class="calculator-buttons">
-          <button class="btn">C</button>
-          <button class="btn">+/-</button>
-          <button class="btn">%</button>
-          <button class="btn operator">del</button>
-          <button class="btn">7</button>
-          <button class="btn">8</button>
-          <button class="btn">9</button>
-          <button class="btn operator">÷</button>
-          <button class="btn">4</button>
-          <button class="btn">5</button>
-          <button class="btn">6</button>
-          <button class="btn operator">x</button>
-          <button class="btn">1</button>
-          <button class="btn">2</button>
-          <button class="btn">3</button>
-          <button class="btn operator">-</button>
-          <button class="btn">0</button>
-          <button class="btn">,</button>
-          <button class="btn operator">=</button>
-          <button class="btn operator">+</button>
+          <button class="btn" onclick="clearDisplay()">C</button>
+          <button class="btn" onclick="appendToDisplay('+')">+/-</button>
+          <button class="btn" onclick="appendToDisplay('%')">%</button>
+          <button class="btn operator" onclick="backspace()">del</button>
+          <button class="btn" onclick="appendToDisplay('7')">7</button>
+          <button class="btn" onclick="appendToDisplay('8')">8</button>
+          <button class="btn" onclick="appendToDisplay('9')">9</button>
+          <button class="btn operator" onclick="appendToDisplay('/')">÷</button>
+          <button class="btn" onclick="appendToDisplay('4')">4</button>
+          <button class="btn" onclick="appendToDisplay('5')">5</button>
+          <button class="btn" onclick="appendToDisplay('6')">6</button>
+          <button class="btn operator" onclick="appendToDisplay('*')">x</button>
+          <button class="btn" onclick="appendToDisplay('1')">1</button>
+          <button class="btn" onclick="appendToDisplay('2')">2</button>
+          <button class="btn" onclick="appendToDisplay('3')">3</button>
+          <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+          <button class="btn" onclick="appendToDisplay('0')">0</button>
+          <button class="btn" onclick="appendToDisplay('.')">,</button>
+          <button class="btn operator" onclick="calculate()">=</button>
+          <button class="btn operator" onclick="appendToDisplay('+')">+</button>
         </div>
       </div>
     </div>
